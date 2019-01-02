@@ -18,6 +18,6 @@ from django.urls import path,include,re_path
 
 
 urlpatterns = [
-    re_path('admin/', admin.site.urls),
+    re_path(r'^my/set', admin.site.urls),
     re_path('polls/',include('polls.urls')),
 ]
